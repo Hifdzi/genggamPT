@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:background="@drawable/bg_gradasi"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="90dp"
+            android:scaleType="center"
+            android:src="@drawable/about_page" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gradasi"
+        android:orientation="vertical">
+        <!--        <TextView-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textSize="25dp"-->
+        <!--            android:textColor="#ffff"-->
+        <!--            android:text="Login"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:layout_width="364dp"
+            android:layout_height="278dp"
+            android:layout_gravity="center"
+            android:background="@drawable/form"
+
+            android:hint="Genggam
+Aplikasi genggam adalah aplikasi  mobile untuk pariwisata di daerah bandung"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:shadowColor="#000"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+
+            android:shadowRadius="1.5"
+            android:textAlignment="center"
+            android:textColor="#0000"
+
+
+
+            />
+        <!--            android:drawableStart="@drawable/user"-->
+
+        <!--            android:paddingLeft="15dp"-->
+        <!--            android:paddingRight="15dp" />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:layout_width="202dp"
+            android:layout_height="38dp"
+            android:layout_gravity="left"
+
+            android:background="@drawable/login_admin_bar"
+            android:text="Login Sebagai Admin?"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_weight="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#E8E8E8EB"
+        app:menu="@menu/bottom_nav"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+        </FrameLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</LinearLayout>
