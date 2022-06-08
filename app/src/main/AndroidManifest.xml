@@ -21,6 +21,15 @@
         </activity>
         <activity
             android:name=".LoginActivity"
+            android:label="Login"
+            android:exported="true" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".ForgotActivity"
+            android:label="Lupa Password"
             android:exported="true" />
     </application>
 

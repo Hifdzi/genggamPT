@@ -4,27 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="10dp"
+    android:paddingTop="12dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="387dp"
-        android:layout_height="541dp"
+        android:layout_width="match_parent"
+        android:layout_height="598dp"
         android:layout_gravity="center"
         android:layout_weight="0.0001"
         android:background="@drawable/map_bg_map"
-        android:padding="15dp" >
+        android:padding="15dp">
 
 
         <EditText
-            android:layout_width="352dp"
-            android:layout_height="39dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_gravity="top"
             android:background="@drawable/form"
             android:drawableStart="@drawable/search_home"
             android:hint=" Search"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp" />
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp" />
     </LinearLayout>
 
     <LinearLayout

@@ -87,6 +87,7 @@
             android:layout_height="13dp" />
 
         <Button
+            android:id="@+id/btnlogin"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -101,6 +102,7 @@
             android:layout_height="13dp" />
 
         <Button
+            android:id="@+id/btnsignup"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -116,6 +118,7 @@
             android:layout_height="9dp" />
 
         <TextView
+            android:id="@+id/btnforgot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="forgot password?"

@@ -6,10 +6,11 @@ import android.os.Bundle
 import android.view.Window
 import org.d3if4112.genggampt.databinding.ActivityLoginBinding
 import org.d3if4112.genggampt.databinding.ActivityMainBinding
+import org.d3if4112.genggampt.databinding.ActivitySignUpBinding
 
-class LoginActivity : AppCompatActivity() {
+class SignupActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivitySignUpBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,22 +18,16 @@ class LoginActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         supportActionBar?.hide()
 
-        binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnlogin.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
         binding.btnsignup.setOnClickListener {
-            val intent = Intent(this, SignupActivity::class.java)
-            startActivity(intent)
-
-        }
-
-        binding.btnforgot.setOnClickListener {
-            val intent = Intent(this, ForgotActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
         }
