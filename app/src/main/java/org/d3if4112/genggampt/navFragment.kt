@@ -34,7 +34,7 @@ class navFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nav, container, false)
+        return inflater.inflate(R.layout.fragment_map, container, false)
     }
 
     companion object {
