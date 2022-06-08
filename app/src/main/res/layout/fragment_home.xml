@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -51,17 +52,286 @@
 
         <!--            android:paddingLeft="15dp"-->
         <!--            android:paddingRight="15dp" />-->
-        <ImageView
-            android:layout_width="889dp"
-            android:layout_height="142dp"
-            android:layout_gravity="center"
-            android:paddingLeft="150dp"
-            android:paddingRight="150dp"
-            android:src="@drawable/grid_horizontal_layout1" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/wisata1"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/album_cover_height"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/orchid_forest_2" />
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thumbnail"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:text="Orchid Forest Cikole"
+                            android:textColor="@color/album_title"
+                            android:textSize="@dimen/album_title" />
+
+                        <TextView
+                            android:id="@+id/count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingBottom="@dimen/songs_count_padding_bottom"
+                            android:text="Lembang"
+                            android:textSize="@dimen/songs_count" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view 2 -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/wisata2"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thumbnail2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/album_cover_height"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/kawahputih" />
+
+                        <TextView
+                            android:id="@+id/title2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thumbnail2"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:text="Kawah Putih"
+                            android:textColor="@color/album_title"
+                            android:textSize="@dimen/album_title" />
+
+                        <TextView
+                            android:id="@+id/count2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title2"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingBottom="@dimen/songs_count_padding_bottom"
+                            android:text="Ciwidey"
+                            android:textSize="@dimen/songs_count" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view 2 -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/wisata3"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thumbnail3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/album_cover_height"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/gunung" />
+
+                        <TextView
+                            android:id="@+id/title3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thumbnail3"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:text="Tangkuban Perahu"
+                            android:textColor="@color/album_title"
+                            android:textSize="@dimen/album_title" />
+
+                        <TextView
+                            android:id="@+id/count3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title3"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingBottom="@dimen/songs_count_padding_bottom"
+                            android:text="lembang"
+                            android:textSize="@dimen/songs_count" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view 2 -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/wisata4"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thumbnail4"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/album_cover_height"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/greatasiaafrica" />
+
+                        <TextView
+                            android:id="@+id/title4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thumbnail4"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:text="Asia Afrika Lembang"
+                            android:textColor="@color/album_title"
+                            android:textSize="@dimen/album_title" />
+
+                        <TextView
+                            android:id="@+id/count4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title4"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingBottom="@dimen/songs_count_padding_bottom"
+                            android:text="lembang"
+                            android:textSize="@dimen/songs_count" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view 2 -->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/wisata5"
+                    android:layout_width="140dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/card_margin"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thumbnail5"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/album_cover_height"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/lembang" />
+
+                        <TextView
+                            android:id="@+id/title5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/thumbnail5"
+                            android:text="Lembang Wonderland"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingTop="@dimen/album_title_padding"
+                            android:textColor="@color/album_title"
+                            android:textSize="@dimen/album_title" />
+
+                        <TextView
+                            android:id="@+id/count5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title5"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/album_title_padding"
+                            android:paddingRight="@dimen/album_title_padding"
+                            android:paddingBottom="@dimen/songs_count_padding_bottom"
+                            android:text="lembang"
+                            android:textSize="@dimen/songs_count" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- card view 2 -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp" />
+            android:layout_height="40dp" />
 
 
         <LinearLayout

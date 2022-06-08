@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GenggamPT">
         <activity
+            android:name=".ui.wisata.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main">
@@ -21,16 +24,16 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="Login"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Login" />
         <activity
             android:name=".SignupActivity"
-            android:label="SignUp"
-            android:exported="true" />
+            android:exported="true"
+            android:label="SignUp" />
         <activity
             android:name=".ForgotActivity"
-            android:label="Lupa Password"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Lupa Password" />
     </application>
 
 </manifest>
