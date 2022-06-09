@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
         }
         binding.wisata2.setOnClickListener {
             val wisata2 = Intent(context, DetailActivity::class.java)
-            wisata2.putExtra("images", R.drawable.gunung)
+            wisata2.putExtra("images", R.drawable.kawah1)
             wisata2.putExtra("title", "Kawah Putih")
             wisata2.putExtra("deskripsi", "Kawah Putih adalah tempat wisata di Bandung yang paling terkenal. Berlokasi di Ciwidey, Jawa Barat, kurang lebih sekitar 50 KM arah selatan kota Bandung.")
             wisata2.putExtra("link", "https://www.google.com/maps/place/Kawah+Putih+Lebak+Muncang+Bandung+Jabar/@-7.1436555,107.3959359,17z/data=!3m1!4b1!4m5!3m4!1s0x2e688c62bdec95ad:0xef9f051488fed458!8m2!3d-7.1436555!4d107.3981246")
@@ -54,7 +54,7 @@ class HomeFragment : Fragment() {
         }
         binding.wisata3.setOnClickListener {
             val wisata3 = Intent(context, DetailActivity::class.java)
-            wisata3.putExtra("images", R.drawable.kawahputih)
+            wisata3.putExtra("images", R.drawable.tangkuper1)
             wisata3.putExtra("title", "Tangkuban Perahu")
             wisata3.putExtra("deskripsi", "Gunung Tangkuban Perahu ini adalah sebuah gunung yang terletak di Provinsi Jawa Barat yang berada sekitar 20 Km dari pusat kota Kembang, Bandung.")
             wisata3.putExtra("link", "https://www.google.com/maps/place/Gn.+Tangkuban+Parahu/@-6.7596375,107.6010259,15z/data=!3m1!4b1!4m5!3m4!1s0x2e68e1ddc59713db:0xa01c96b73428fedc!8m2!3d-6.7596377!4d107.6097807")
@@ -85,6 +85,24 @@ class HomeFragment : Fragment() {
                 Intent(
                     Intent.ACTION_VIEW,
                     Uri.parse("https://www.google.com/maps/search/wisata+bandung+terdekat/@-6.9173146,107.6101118,12z/data=!3m1!4b1")
+                )
+            )
+        }
+
+        binding.btnmapshome.setOnClickListener {
+            requireActivity().startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://www.google.com/maps/place/Bandung,+Kota+Bandung,+Jawa+Barat/@-6.9034443,107.5731164,12z/data=!3m1!4b1!4m5!3m4!1s0x2e68e6398252477f:0x146a1f93d3e815b2!8m2!3d-6.9174639!4d107.6191228?hl=id")
+                )
+            )
+        }
+
+        binding.btnmapsearchshome.setOnClickListener {
+            requireActivity().startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://www.google.com/maps/place/Bandung,+Kota+Bandung,+Jawa+Barat/@-6.9034443,107.5731164,12z/data=!3m1!4b1!4m5!3m4!1s0x2e68e6398252477f:0x146a1f93d3e815b2!8m2!3d-6.9174639!4d107.6191228?hl=id")
                 )
             )
         }

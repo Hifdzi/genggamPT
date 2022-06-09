@@ -37,5 +37,14 @@ class MapFragment : Fragment() {
                 )
             )
         }
+
+        binding.btnsearchmap.setOnClickListener {
+            requireActivity().startActivity(
+                Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://www.google.com/maps/place/Bandung,+Kota+Bandung,+Jawa+Barat/@-6.9034443,107.5731164,12z/data=!3m1!4b1!4m5!3m4!1s0x2e68e6398252477f:0x146a1f93d3e815b2!8m2!3d-6.9174639!4d107.6191228?hl=id")
+                )
+            )
+        }
     }
 }
